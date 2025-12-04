@@ -1,0 +1,150 @@
+@use "../base" as *;
+
+.button {
+  background: theme-color(primary);
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  @include transition(all);
+
+  &:hover {
+    background:color-shade(  theme-color(primary), 15%);
+    
+  }
+}
+
+
+.card {
+  background: theme-color(card);
+  border-radius: $border-radius;
+  padding: 1rem;
+  color: theme-color(text);
+  border: 1px solid #eee;
+  
+@include transition(all);
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    margin-top: 0;
+    color:  theme-color(primary);
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+
+.jumbotron{
+    h3{
+        font-size: map-get($fontsize , h3);
+    }
+    p{
+        font-size: map-get($fontsize, para);
+    }
+    a{
+        @include  buttons(black, white, 200px);
+        font-size: map-get($fontsize , para );
+    }
+}
+
+
+#aboutus {
+    h3 {
+        font-size: map-get($fontsize , h3);
+    }
+
+    .aboutus {
+        p.p-subtitle {
+            font-size: map-get($fontsize, para-subtitle);
+        }
+
+        i.fa {
+            font-size: map-get($fontsize, fa-about);
+
+        }
+        p.fa-subtitle{
+            font-size: map-get($fontsize , fa-subtitle );
+        }
+        p.p-about{
+            font-size: map-get($fontsize , para);
+        }
+    }
+
+
+}
+
+
+
+.team{
+    h3{
+        font-size: map-get($fontsize, h3 )
+    }
+    p{
+        font-size: map-get($fontsize , para );
+    }
+    p.p-subtitle{
+        font-size: map-get($fontsize ,para-subtitle )
+    }
+    
+    a{
+        @include buttons(#f1f1f1,black,100%);
+        margin-bottom: .5rem ;
+        font-size: map-get($fontsize , para );
+    }
+}
+
+
+
+.static{
+    .numbers{
+        font-size: map-get($fontsize , numbers );
+    }
+    p{
+                font-size: map-get($fontsize , para );
+
+    }
+}
+
+
+
+#ourworks{
+    h3{
+        font-size: map-get($fontsize , h3 );
+    }
+    p.p-subtitle{
+        font-size: map-get($fontsize , para-subtitle );
+    }
+}
+
+
+#ourskills {
+    h3 {
+        font-size: map-get($fontsize , h3);
+
+    }
+
+    p {
+        font-size: map-get($fontsize , para);
+
+    }
+    i.fa{
+        font-size: map-get($fontsize , para);
+    }
+
+}
+
+
+
+form {
+    a#sendmsg{
+        @include buttons(color-shade(theme-color(bg), 80%), theme-color(text-white), 250px);
+        &:hover{
+            background-color: color-shade(theme-color(bg), 90%);
+        }
+    }
+}

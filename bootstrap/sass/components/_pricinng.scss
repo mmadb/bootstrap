@@ -1,0 +1,29 @@
+@use '../base' as *;
+.pricing{
+    background-color: #616161;
+    color: theme-color(text-white) ;
+    padding: 36px;
+ .pricingcard.pro {
+    transform: scale(1.04);   
+    position: relative;
+    transition: .3s ease;
+}
+
+    a{
+        @include buttons(black, white, 100px);
+        margin: 0 auto;
+    }
+
+}
+.pricingcard{
+    background-color: theme-color(bg);
+}
+.fetures{
+    color: theme-color(text);
+}
+
+.pricingaction{
+    background-color: theme-color(pricing-action);
+    padding: 30px;
+}
+
