@@ -1,5 +1,5 @@
 // Theme selector: 'dark' or 'light'
-$theme: light;
+$theme: dark;
 $border-radius: 8px;
 
 $fontname: 'Raleway';
@@ -33,11 +33,9 @@ $light-theme: (
 $dark-theme: (
   bg: #121212,
   menu-theme: #333,
-
   text: #f8f9fa,
   primary: #0d6efd,
   secondary: #11bb11,
   text-white:#f2f2f2,
-
   card: #1e1e1e
 );
